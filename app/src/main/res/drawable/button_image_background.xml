@@ -1,0 +1,25 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fond du bouton -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <solid android:color="#FFC0CB" /> <!-- Rose clair -->
+        </shape>
+    </item>
+
+    <!-- Bordure du bouton -->
+    <item android:right="1dp" android:left="1dp" android:top="1dp" android:bottom="1dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <solid android:color="#FF4081" /> <!-- Bordure rose -->
+        </shape>
+    </item>
+
+    <!-- Ombre du bouton -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <solid android:color="#55000000" /> <!-- Ombre légère -->
+        </shape>
+    </item>
+</layer-list>

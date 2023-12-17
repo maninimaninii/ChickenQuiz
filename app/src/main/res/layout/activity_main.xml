@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/menu">
+
+
+
+
+    <!-- Boutons de sélection des niveaux -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/lvl1Button"
+        android:layout_width="395dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="212dp"
+        android:background="@drawable/transparent_background"
+        android:gravity="center"
+        android:onClick="onLevelButtonClick"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/lvl2Button"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_below="@id/lvl1Button"
+        android:layout_marginTop="71dp"
+        android:background="@drawable/transparent_background"
+        android:gravity="center"
+        android:onClick="onLevelButtonClick"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/lvl3Button"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_below="@id/lvl2Button"
+        android:layout_marginTop="67dp"
+        android:background="@drawable/transparent_background"
+        android:gravity="center"
+        android:onClick="onLevelButtonClick"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/lvl4Button"
+        android:layout_width="395dp"
+        android:layout_height="76dp"
+        android:layout_below="@id/lvl3Button"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/transparent_background"
+        android:gravity="center"
+        android:onClick="onLevelButtonClick"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

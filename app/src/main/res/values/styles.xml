@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AnswerButton">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">fill</item>
+    </style>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Ajoutez ceci pour masquer la barre de titre -->
+        <item name="windowNoTitle">true</item>
+        <!-- Ajoutez ceci si vous souhaitez que l'activité prenne tout l'écran -->
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="ButtonTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/font_family</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">#d42630</item>
+        <!-- Ajoutez d'autres propriétés de style au besoin -->
+    </style>
+</resources>

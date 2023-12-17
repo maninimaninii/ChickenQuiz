@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- les sprites utilisées ont été récuperees sur le github de samuemcust-->
+
+<!--seul les sprites sont d'orgine exterieure tout le reste vient de mon code-->
+<!-- La structure des classes a egalement ete reprise d'un modele en ligne-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <!-- pour disposer les sprites horizontalement-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:src="@drawable/lwazo3"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="5dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:src="@drawable/lwazobleu1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="75dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:src="@drawable/lwazorouj3"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="90dp"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- le titre principal -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:src="@drawable/nom"
+            />
+
+        <!--bouton play-->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="105dp"
+            android:src="@drawable/play"
+            />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

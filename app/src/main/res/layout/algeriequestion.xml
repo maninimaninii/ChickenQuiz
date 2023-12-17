@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/stade">
+
+    <!-- Cadre contenant la question -->
+
+    <ImageView
+        android:id="@+id/vies"
+        android:layout_width="185dp"
+        android:layout_height="242dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-38dp"
+        android:layout_marginEnd="-23dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/troisvies" />
+
+    <FrameLayout
+        android:id="@+id/questionTextLayout"
+        android:layout_width="391dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/textbackground"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/questionTextViewText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/transparent_background"
+            android:gravity="center"
+            android:text="Ceci est un exemple de question ?"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+
+    <!-- Première ligne de boutons -->
+    <LinearLayout
+        android:id="@+id/boutons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/questionTextLayout"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/answerButton1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:text="Bouton 1"
+            android:textColor="@color/white"
+            style="@style/ButtonTextStyle"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/answerButton2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/button_background"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/white"
+            android:text="Bouton 2"
+            style="@style/ButtonTextStyle"/>
+    </LinearLayout>
+
+    <!-- Deuxième ligne de boutons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/boutons"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/answerButton3"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:text="Bouton 3"
+            style="@style/ButtonTextStyle"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/answerButton4"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:text="Bouton 4"
+            style="@style/ButtonTextStyle"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
