@@ -68,7 +68,7 @@ class BitmapBank(resources: Resources) { // Classe faisant office de stock d'ima
     }
 
     fun getwazoWidth(): Int {
-        return wazos[0]?.width ?: 0
+        return  wazos[0]?.width ?: 0
     }
 
     fun getwazoHeight(): Int {
