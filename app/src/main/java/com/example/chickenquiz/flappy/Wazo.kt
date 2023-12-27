@@ -34,12 +34,12 @@ class Wazo(t: TypeOiseau) {
     }
 
     fun getWazoX(): Int {
-        if(type == TypeOiseau.POULET) {wazoX = DonneesApp.SCREEN_WIDTH / 2 - DonneesApp.bitmapBank.getpouletWidth() / 2}
+        if(type == TypeOiseau.POULET) wazoX = DonneesApp.SCREEN_WIDTH / 2 - DonneesApp.bitmapBank.getpouletWidth() / 2
         return wazoX
     }
 
     fun getWazoY(): Int {
-        if(type == TypeOiseau.POULET) {wazoY = DonneesApp.SCREEN_WIDTH / 2 - DonneesApp.bitmapBank.getpouletHeight() / 2}
+        if(type == TypeOiseau.POULET) wazoY = DonneesApp.SCREEN_WIDTH / 2 - DonneesApp.bitmapBank.getpouletHeight() / 2
 
         return wazoY
     }
