@@ -17,6 +17,7 @@ class Wazo(t: TypeOiseau) {
     lateinit var rect: Rect
 
     init {
+
         wazoX = DonneesApp.SCREEN_WIDTH / 2 - DonneesApp.bitmapBank.getwazoWidth() / 2
         wazoY = DonneesApp.SCREEN_HEIGHT / 2 - DonneesApp.bitmapBank.getwazoHeight() / 2
         frameacc = 0
@@ -33,10 +34,13 @@ class Wazo(t: TypeOiseau) {
     }
 
     fun getWazoX(): Int {
+        if(type == TypeOiseau.POULET) wazoX = DonneesApp.SCREEN_WIDTH / 2 - DonneesApp.bitmapBank.getpouletWidth() / 2
         return wazoX
     }
 
     fun getWazoY(): Int {
+        if(type == TypeOiseau.POULET) wazoY = DonneesApp.SCREEN_WIDTH / 2 - DonneesApp.bitmapBank.getpouletHeight() / 2
+
         return wazoY
     }
 
@@ -57,12 +61,20 @@ class Wazo(t: TypeOiseau) {
     }
 
     fun getOiseauRect(): Rect {
-        return Rect(
-            wazoX,
-            wazoY,
-            DonneesApp.bitmapBank.getwazoWidth() + wazoX,
-            DonneesApp.bitmapBank.getwazoHeight() + wazoY
-        )
+        if(type == TypeOiseau.POULET){
+            return  Rect(
+                getWazoX(),
+                getWazoY(),
+                DonneesApp.bitmapBank.getpouletWidth() + wazoX,
+                DonneesApp.bitmapBank.getpouletHeight() + wazoY
+            )
+        }else{
+            return Rect(
+                wazoX,
+                wazoY,
+                DonneesApp.bitmapBank.getwazoWidth() + wazoX,
+                DonneesApp.bitmapBank.getwazoHeight() + wazoY
+            )}
     }
 
 

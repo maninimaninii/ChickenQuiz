@@ -75,6 +75,14 @@ class BitmapBank(resources: Resources) { // Classe faisant office de stock d'ima
         return wazos[0]?.height ?: 0 / 3
     }
 
+    fun getpouletWidth(): Int {
+        return poulets[0]?.width ?: 0
+    }
+
+    fun getpouletHeight(): Int {
+        return wazos[0]?.height ?: 0 / 3
+    }
+
     fun gettuyoWidth(): Int {
         return tuyaux[0]?.width ?: 0
     }
